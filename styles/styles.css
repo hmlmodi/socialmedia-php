@@ -1,0 +1,39 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: url("./bg.svg");
+    margin: 150px;
+}
+
+form {
+    align-content: center;
+    font-size: larger;
+    text-anchor: 00 px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: auto;
+    max-width: 300px;
+    padding: 16px;
+    text-align: left;
+    background-color: rgb(247, 247, 231);
+}
+
+.button {
+    padding: 5px 15px;
+    background: rgb(96, 235, 96);
+    border: 0 none;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.inputbox {
+    width: 300px;
+    height: 30px;
+}
