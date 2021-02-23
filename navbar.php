@@ -1,4 +1,4 @@
-<div class="container">
+<div class="navcontainer">
 
         <!-- -----------------------nav-bar--------------------------------------- -->
         <ul class="nav nav-tabs">

@@ -16,7 +16,15 @@ input {
 
 .container {
     margin: auto;
-    max-width: 300px;
+    max-width: 350px;
+    padding: 16px;
+    text-align: left;
+    background-color: rgb(247, 247, 231);
+}
+
+.navcontainer {
+    margin: auto;
+    max-width: auto;
     padding: 16px;
     text-align: left;
     background-color: rgb(247, 247, 231);
