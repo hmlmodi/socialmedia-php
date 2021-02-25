@@ -20,8 +20,8 @@
             <label for="dob">Date of Birth:<td><?php echo $row["dob"]; ?></td></label><br>
             <label for="Gender">Gender:<td><?php echo $row["gender"]; ?></td></label><br>
  </form>
-        <a href="./backend_edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a><br>
-        <a href="">your photos</a><br>
+        <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a><br>
+        <a href="user_post.php">your photos</a><br>
         <a href="">follower</a><br>
         <a href="">setting</a><br>
 

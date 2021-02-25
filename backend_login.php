@@ -15,7 +15,7 @@ if (isset($_POST["submit"])) {
         $hml = mysqli_query($connection, $idquery);
         $row = $hml->fetch_assoc();
         $floginid = implode(',', $row);
-        var_dump($floginid);
+        // var_dump($floginid);
         $_SESSION['floginid1'] = $floginid;
         header("location:welcome.php");
     }

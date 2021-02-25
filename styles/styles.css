@@ -1,7 +1,7 @@
 body {
     font-family: 'Noto Sans', sans-serif;
     background: url("./bg.svg");
-    margin: 150px;
+    margin: 50px;
 }
 
 form {
@@ -34,7 +34,7 @@ input {
     padding: 5px 15px;
     background: rgb(96, 235, 96);
     border: 0 none;
-    width: 300px;
+    width: 325px;
     height: 30px;
     cursor: pointer;
     -webkit-border-radius: 5px;
@@ -44,4 +44,12 @@ input {
 .inputbox {
     width: 300px;
     height: 30px;
+}
+
+#profiledisplay {
+    display: block;
+    width: 250px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
 }
