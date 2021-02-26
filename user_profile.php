@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <?php include('head.php'); ?>
+    <?php include('include./head.php'); ?>
     <title>User profile</title>
 </head>
-<?php include('navbar.php'); ?>
-<?php include('config.php'); ?>
-<?php include("./backend_user_profile.php"); ?>
+<?php include('include./navbar.php'); ?>
+<?php include('include./config.php'); ?>
+<?php include("include./backend_user_profile.php"); ?>
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
@@ -19,7 +19,7 @@
             <label for="Phonenumber">Phonenumber:<td><?php echo $row["phoneNumber"]; ?></td></label><br>
             <label for="dob">Date of Birth:<td><?php echo $row["dob"]; ?></td></label><br>
             <label for="Gender">Gender:<td><?php echo $row["gender"]; ?></td></label><br>
- </form>
+        </form>
         <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a><br>
         <a href="user_post.php">your photos</a><br>
         <a href="">follower</a><br>

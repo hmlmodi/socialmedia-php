@@ -1,7 +1,7 @@
 <!-- code for backend -->
 <?php
-include("./config.php");
-include("./backend_user_details.php");
+include("include./config.php");
+include("include./backend_user_details.php");
 ?>
 
 <!-- ------------------------------------------------------------------------------------------------ -->
@@ -10,7 +10,7 @@ include("./backend_user_details.php");
 <html lang="en">
 
 <head>
-	<?php include('head.php'); ?>
+	<?php include('include./head.php'); ?>
 	<title>User details</title>
 </head>
 

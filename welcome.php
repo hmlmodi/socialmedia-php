@@ -6,11 +6,11 @@ session_start();
 <html lang="en">
 
 <head>
-    <?php include('head.php'); ?>
+    <?php include('include./head.php'); ?>
     <title>home page</title>
 </head>
 <h1 align="center">Welcome</h1>
-<?php include('navbar.php'); ?>
+<?php include('include./navbar.php'); ?>
 
 <body>
 

@@ -1,7 +1,7 @@
 <!-- code for backend -->
 <?php
-include("./config.php");
-include("./backend_login.php");
+include("include./config.php");
+include("./include./backend_login.php");
 ?>
 
 
@@ -10,7 +10,7 @@ include("./backend_login.php");
 <html lang="en">
 
 <head>
-	<?php include('head.php'); ?>
+	<?php include('include./head.php'); ?>
 </head>
 
 <body>

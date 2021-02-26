@@ -1,7 +1,9 @@
 <!-- --------------------------------------------------------------------------------
  -->
 <?php
-include("config.php");
+
+include("include./config.php");
+
 
 if (isset($_POST['upload'])) {
 
@@ -14,9 +16,6 @@ if (isset($_POST['upload'])) {
 
         $query = "INSERT INTO `post`(`userId`,`image`, `imageBio`) VALUES ('$floginid','$profileimagename','$bio')";
         mysqli_query($connection, $query);
-
-        
-        
     }
 }
 ?>
@@ -24,12 +23,13 @@ if (isset($_POST['upload'])) {
 <html lang="en">
 
 <head>
-    <?php include('head.php'); ?>
+
+    <?php include('include./head.php'); ?>
 
     <title>Create profile </title>
 
 </head>
-<?php include('navbar.php'); ?>
+<?php include('include./navbar.php'); ?>
 
 <body>
     <div class="container" align="center">
