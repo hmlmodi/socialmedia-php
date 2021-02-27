@@ -1,6 +1,6 @@
 <?php
 include("include./config.php");
-include("include./backend_edit_profile.php");
+include("include./edit_profile.php");
 ?>
 
 <!------------------------------------------------------------------------------------------------------>
@@ -9,7 +9,7 @@ include("include./backend_edit_profile.php");
 <html lang="en">
 
 <head>
-    <?php include('include./head.php'); ?>
+    <?php include("include./head.php"); ?>
     <title>User details</title>
 </head>
 

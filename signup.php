@@ -1,7 +1,7 @@
 <!-- code for backend -->
 <?php
 include("include./config.php");
-include("include./backend_signup.php");
+include("include./signup.php");
 ?>
 
 <!----------------------------------------------->
@@ -9,7 +9,7 @@ include("include./backend_signup.php");
 <html lang="en">
 
 <head>
-	<?php include('include./head.php'); ?>
+	<?php include("include./head.php"); ?>
 </head>
 
 <body>
@@ -22,6 +22,9 @@ include("include./backend_signup.php");
 				echo "<span>$error</span>";
 			}
 			?></div>
+
+
+
 		<form action="" id="signform" method="POST">
 			<label for="Email">Email</label><br>
 			<input type="email" name="username" placeholder="Enter Email" class="inputbox"><br>

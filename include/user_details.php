@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
 	$phonenumber = $_POST["phonenumber"];
 	$dateofbirth = $_POST["dateofbirth"];
 	$gender = $_POST["gender"];
-
+	if (!empty($firstname) && !empty($lastname) && !empty($phonenumber)&& !empty($dateofbirth) && !empty($gender) ){
 	$idquery = "SELECT `id` FROM `login` WHERE userName ='$name1'&& password='$pass1'";
 	$hml = mysqli_query($connection, $idquery);
 	$row = $hml->fetch_assoc();
@@ -18,5 +18,6 @@ if (isset($_POST["submit"])) {
 	$query = "INSERT INTO `user` (`loginId`, `firstName`, `lastName`, `phoneNumber`, `dob`, `gender`) VALUES ('$floginid', '$firstname','$lastname', '$phonenumber', '$dateofbirth','$gender');";
 	$result = mysqli_query($connection, $query);
 	header("location:welcome.php");
+}
 }
 ?>

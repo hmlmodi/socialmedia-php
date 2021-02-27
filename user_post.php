@@ -4,15 +4,6 @@ include("include./config.php");
 $floginid = $_SESSION['floginid1'];
 $postquery = "SELECT `image`, `imageBio` FROM `post` WHERE userId=$floginid";
 $result = mysqli_query($connection, $postquery);
-// $user = mysqli_fetch_all($result,MYSQLI_ASSOC);
-$user = $result->fetch_assoc();
-
-// var_dump($user);
-//    echo $row['photo'];
-$xml = $user['image'];
-//  var_dump($xml);
-$target = "images/" . $user['image'];
-// echo $target;
 
 
 
@@ -25,18 +16,30 @@ $target = "images/" . $user['image'];
 
     <?php include('include./head.php'); ?>
 
-    <title>Create profile </title>
+    <title>Your photos</title>
 
 </head>
 <?php include('include./navbar.php'); ?>
 
 
 <body>
-    <?php foreach ($user as $user) : ?>
-
-        <img src="<?php echo $target; ?>" />
-    <?php endforeach ?>
-
+    <div class="profilecontainer">
+        <table class="table table-bordered">
+            <thead>
+                <th>Profile</th>
+            </thead>
+            <tbody>
+                <?php while ($row = mysqli_fetch_array($result)) {
+                ?>
+                    <tr>
+                        <td>
+                            <img src="images/<?php echo $row['image'] ?>" width="300"><br>
+                            Bio:<br>
+                            <?php echo $row['imageBio'] ?>
+                        </td>
+                    </tr>
+                <?php } ?>
+    </div>
 </body>
 
 

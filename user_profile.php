@@ -5,9 +5,9 @@
     <?php include('include./head.php'); ?>
     <title>User profile</title>
 </head>
-<?php include('include./navbar.php'); ?>
-<?php include('include./config.php'); ?>
-<?php include("include./backend_user_profile.php"); ?>
+<?php include("include./navbar.php"); ?>
+<?php include("include./config.php"); ?>
+<?php include("include./user_profile.php"); ?>
 
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
