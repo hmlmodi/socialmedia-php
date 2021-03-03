@@ -19,9 +19,9 @@ include("include./user_details.php");
 		<h1>Enter your details</h1>
 		<form action="" id="signform" method="POST">
 			<label for="firstname">Firstname*</label><br>
-			<input type="text" name="firstname" minlenghtclass="inputbox" pattern="[A-Za-z]" required><br>
+			<input type="text" name="firstname" class="inputbox" required><br>
 			<label for="lastname">Lastname*</label><br>
-			<input type="text" name="lastname" class="inputbox" pattern="[A-Za-z]" required><br>
+			<input type="text" name="lastname" class="inputbox" required><br>
 			<label for="Phonenumber">Phonenumber*</label><br>
 			<input type="tel" name="phonenumber" class="inputbox" pattern="[0-9]{3}[0-9]{4}[0-9]{3}" required><br>
 			<label for="dob">Date of Birth*</label><br>
@@ -34,3 +34,4 @@ include("include./user_details.php");
 		</form>
 	</div>
 </body>
+

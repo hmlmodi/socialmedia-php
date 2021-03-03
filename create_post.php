@@ -43,7 +43,7 @@ if (isset($_POST['upload'])) {
             </h1>
             <img src="images/placeholder.jpg" onclick="triggerclick()" id="profiledisplay">
             <div class="text-center">Select your photo</div>
-            <input type="file" name="profileimage" accept=".png, .jpg, .jpeg" id="profileimage" onchange="displayImage(this)" style="display: none;"><br>
+            <input type="file" name="profileimage" accept=".png, .jpg, .jpeg" id="profileimage" onchange="displayImage(this)" style="display: none;" required><br>
             <label for="bio">Bio</label><br>
             <textarea name="bio" id="bio" cols="30" rows="5"></textarea><br>
             <button class="button" name="upload" type="submit">upload</button>

@@ -6,7 +6,7 @@
                 <a class="nav-link " href="./welcome.php">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">friends</a>
+                <a class="nav-link" href="./friends.php">Make friends</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./create_post.php">Create post </a>

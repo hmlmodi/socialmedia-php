@@ -12,19 +12,56 @@
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
 <body>
-    <div class="container" align="center">
-        <form action="./insert.php" id="signform" method="POST">
-            <label for="firstname">Firstname:<td><?php echo $row["firstName"]; ?></td></label><br>
-            <label for="lastname">Lastname:<td><?php echo $row["lastName"]; ?></td></label><br>
-            <label for="Phonenumber">Phonenumber:<td><?php echo $row["phoneNumber"]; ?></td></label><br>
-            <label for="dob">Date of Birth:<td><?php echo $row["dob"]; ?></td></label><br>
-            <label for="Gender">Gender:<td><?php echo $row["gender"]; ?></td></label><br>
-        </form>
-        <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a><br>
-        <a href="user_post.php">your photos</a><br>
-        <a href="">follower</a><br>
-        <a href="">setting</a><br>
+    <!-- <div class="container" align="center"> -->
+    <div class="profilecontainer">
+        <a href="./user_post.php"><button type="button" class="btn btn-dark">Your post</button></a>
+        <a href="./user_follower.php"><button type="button" class="btn btn-dark">follower</button></a>
+        <!-- <a href="./edit_profile.php"><button type="button" class="btn btn-dark">setting</button></a> -->
+        <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a>
 
+        <table class="table border">
+            <th>Profile</th>
+            <th>Info</th>
+            <form action="./insert.php" id="signform" method="POST">
+                <tr>
+                    <td>
+                        <label for="firstname">Firstname:
+                    <td><?php echo $row["firstName"]; ?></td></label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">Lastname:
+                    <td><?php echo $row["lastName"]; ?></td></label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Phonenumber">Phonenumber:
+                    <td><?php echo $row["phoneNumber"]; ?></td></label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth:
+                    <td><?php echo $row["dob"]; ?></td></label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Gender">Gender:
+                    <td><?php echo $row["gender"]; ?></td></label>
+
+                    </td>
+                </tr>
+            </form>
+
+        </table>
+    </div>
 
 
 

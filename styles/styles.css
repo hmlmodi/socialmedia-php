@@ -1,62 +1,63 @@
-                    body {
-                    font-family: 'Noto Sans', sans-serif;
-                    background: url("./bg.svg");
-                    margin: 50px;
-                }
-                
-                form {
-                    align-content: center;
-                    font-size: larger;
-                    text-anchor: 00 px;
-                }
-                
-                input {
-                    margin-bottom: 5px;
-                }
-                
-                .container {
-                    margin: auto;
-                    max-width: 350px;
-                    padding: 16px;
-                    text-align: left;
-                    background-color: rgb(247, 247, 231);
-                }
-                
-                .navcontainer {
-                    margin: auto;
-                    max-width: auto;
-                    padding: 16px;
-                    text-align: left;
-                    background-color: rgb(247, 247, 231);
-                }
-                
-                .button {
-                    padding: 5px 15px;
-                    background: rgb(96, 235, 96);
-                    border: 0 none;
-                    width: 300px;
-                    height: 30px;
-                    cursor: pointer;
-                    -webkit-border-radius: 5px;
-                    border-radius: 5px;
-                }
-                
-                .inputbox {
-                    width: 300px;
-                    height: 30px;
-                }
-                
-                #profiledisplay {
-                    display: block;
-                    width: 250px;
-                    height: 200px;
-                    margin: 10px auto;
-                    border-radius: 50%;
-                }
-                
-                .profilecontainer {
-                    margin: auto;
-                    max-width: 400px;
-                    padding: 16px;
-                    text-align: left;
-                    background-color: rgb(247, 247, 231);
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: url("./bg.svg");
+    /* margin: 50px; */
+}
+
+form {
+    align-content: center;
+    font-size: larger;
+    text-anchor: 00 px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: auto;
+    max-width: 350px;
+    padding: 16px;
+    text-align: left;
+    background-color: rgb(247, 247, 231);
+}
+
+.navcontainer {
+    margin: auto;
+    max-width: auto;
+    padding: 16px;
+    text-align: left;
+    background-color: rgb(247, 247, 231);
+}
+
+.button {
+    padding: 5px 15px;
+    background: rgb(96, 235, 96);
+    border: 0 none;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.inputbox {
+    width: 300px;
+    height: 30px;
+}
+
+#profiledisplay {
+    display: block;
+    width: 250px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.profilecontainer {
+    margin: auto;
+    background-color: rgb(247, 247, 231);
+    max-width: 400px;
+    padding: 16px;
+    text-align: left;
+}

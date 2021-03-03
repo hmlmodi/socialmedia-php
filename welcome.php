@@ -1,12 +1,5 @@
 <?php
 include("include./config.php");
-
-$floginid = $_SESSION['floginid1'];
-$postquery = "SELECT `image`, `imageBio` FROM `post` ORDER BY id DESC";
-$result = mysqli_query($connection, $postquery);
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +9,10 @@ $result = mysqli_query($connection, $postquery);
 
     <?php include('include./head.php'); ?>
 
-    <title>Your photos</title>
+    <title>Homepage</title>
 
 </head>
-<h1 align="center">Welcome</h1>
+<!-- <h1 align="center">Welcome</h1> -->
 <?php include('include./navbar.php'); ?>
 
 
@@ -30,17 +23,7 @@ $result = mysqli_query($connection, $postquery);
                 <th>Profile</th>
             </thead>
             <tbody>
-                <?php while ($row = mysqli_fetch_array($result)) {
-                ?>
-                    <tr>
-                        <td>
-                            <img src="images/<?php echo $row['image'] ?>" width="300"><br>
-                            
-                            Bio:<br>
-                            <?php echo $row['imageBio'] ?>
-                        </td>
-                    </tr>
-                <?php } ?>
+              <?php include("include./newsfeed.php")?> 
     </div>
 </body>
 
