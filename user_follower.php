@@ -37,7 +37,7 @@
                     $result = mysqli_query($connection, $postquery);
 
 
-                ?>
+                ?> 
 
 
                     <?php while ($row = mysqli_fetch_array($result)) {

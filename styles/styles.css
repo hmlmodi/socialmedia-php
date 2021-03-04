@@ -61,3 +61,19 @@ input {
     padding: 16px;
     text-align: left;
 }
+
+.like,
+.unlike,
+.likes_count {
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.fa-thumbs-up,
+.fa-thumbs-o-up {
+    transform: rotateY();
+    font-size: 1.3em;
+}
