@@ -14,11 +14,12 @@
 <body>
     <!-- <div class="container" align="center"> -->
     <div class="profilecontainer">
-        <a href="./user_post.php"><button type="button" class="btn btn-dark">Your post</button></a>
-        <a href="./user_follower.php"><button type="button" class="btn btn-dark">follower</button></a>
-        <!-- <a href="./edit_profile.php"><button type="button" class="btn btn-dark">setting</button></a> -->
-        <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a>
-
+        <div class="col">
+            <a href="./user_post.php"><button type="button" class="btn btn-dark">Your post</button></a>
+            <a href="./user_follower.php"><button type="button" class="btn btn-dark">follower</button></a>
+            <!-- <a href="./edit_profile.php"><button type="button" class="btn btn-dark">setting</button></a> -->
+            <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a>
+        </div>
         <table class="table border">
             <th>Profile</th>
             <th>Info</th>

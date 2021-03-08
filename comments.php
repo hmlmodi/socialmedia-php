@@ -75,7 +75,6 @@
 		$('.like').on('click', function(){
 			var postid = $(this).data('id');
 			    $post = $(this);
-
 			$.ajax({
 				url: 'index.php',
 				type: 'post',

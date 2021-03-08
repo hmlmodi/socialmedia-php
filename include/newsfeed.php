@@ -17,6 +17,7 @@ while ($num = mysqli_fetch_array($listquery, MYSQLI_ASSOC)) {
 
     <?php while ($row = mysqli_fetch_array($result)) {
         $postid = $row["id"];
+        $_SESSION['postid'] = $postid;
     ?>
         <tr>
             <td>

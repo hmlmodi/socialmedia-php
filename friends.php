@@ -4,7 +4,7 @@ include("include./config.php");
 $floginid = $_SESSION['floginid1'];
 $friendsquery = "SELECT `userName` FROM `login` EXCEPT SELECT  `userName` FROM `login` WHERE id='$floginid' ";
 $result = mysqli_query($connection, $friendsquery);
-var_dump($result);
+// var_dump($result);
 ?>
 
 <!DOCTYPE html>

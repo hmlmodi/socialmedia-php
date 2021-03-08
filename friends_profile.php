@@ -44,7 +44,7 @@ include("include./user_friends_profile.php");
 
             </thead>
         </table>
-        
+
 
     </div>
 
@@ -65,81 +65,4 @@ include("include./user_friends_profile.php");
             })
         })
     });
-    
-    
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- function follow_unfollow() {
-    var action = "follow_unfollow";
-    $.ajax({
-        url = "follow.php",
-        method: "post",
-        data: {
-            action: action
-        },
-        success: function(data) {
-            $("#fetch_data").html(data);
-        }
-    });
-}
-$(document).on("click",".action_button",function()
-{   
-var loginid = $(this).data($loginid);
-var action = $(this).data("action");
-
-$.ajax({
-        url = "follow.php",
-        method: "post",
-        data: {
-           loginid:$loginid ,action: action
-        },
-        success: function(data) {
-            follow_unfollow();
-        }
-
-
-    }
-});
-
-
-});   -->

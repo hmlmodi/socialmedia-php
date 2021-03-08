@@ -24,76 +24,36 @@
 
 
             <?php
-                $floginid = $_SESSION['floginid1'];
+            $floginid = $_SESSION['floginid1'];
 
-                $valid = "SELECT `followerId` FROM `follower` WHERE userId='$floginid'";
-                $listquery = mysqli_query($connection, $valid);
-                //  var_dump($row);
+            $valid = "SELECT `followerId` FROM `follower` WHERE userId='$floginid'";
+            $listquery = mysqli_query($connection, $valid);
+            //  var_dump($row);
 
-                while ($num = mysqli_fetch_array($listquery, MYSQLI_ASSOC)) {
-                    $fol = $num["followerId"];
-                    // var_dump($num);
-                    $postquery = "SELECT `userName` FROM `login` WHERE id='$fol'";
-                    $result = mysqli_query($connection, $postquery);
-
-
-                ?> 
+            while ($num = mysqli_fetch_array($listquery, MYSQLI_ASSOC)) {
+                $fol = $num["followerId"];
+                // var_dump($num);
+                $postquery = "SELECT `userName` FROM `login` WHERE id='$fol'";
+                $result = mysqli_query($connection, $postquery);
 
 
-                    <?php while ($row = mysqli_fetch_array($result)) {
-                    ?>
-                        <tr>
-                            <td>
-                                <><?php 
+            ?>
+
+
+                <?php while ($row = mysqli_fetch_array($result)) {
+                ?>
+                    <tr>
+                        <td>
+                            <><?php
                                 $select = $row["userName"];
-                                $fquery = "SELECT 'userName' FROM `login` WHERE userName ='$select'";"?><br>
+                                $fquery = "SELECT 'userName' FROM `login` WHERE userName ='$select'"; ?><br>
+                               
+                        </td>
+                    </tr>
+            <?php
 
-                                Bio:<br>
-                                
-                            </td>
-                        </tr>
-                <?php
-
-                    }
-                } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- --------------------------------------------------- -->
-
+                }
+            } ?>
 
             <?php
 
@@ -106,38 +66,38 @@
                 $fol = $num["followerId"];
                 $postquery = "SELECT `userName` FROM `login` WHERE id='$fol'";
                 $result = mysqli_query($connection, $postquery);
-                var_dump($result);
-            
-// $result = mysqli_query($connection, $friendsquery);
+                // var_dump($result);
 
-            while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-            
+                // $result = mysqli_query($connection, $friendsquery);
+
+                while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+
             ?>
-                <tr>
-                    <td>
-                        <div><?php echo $row["userName"]; ?>
-                        </div>
-                        <div> <?php
-                                $_SESSION['row'] = $row;
-                                $select = $row["userName"];
-                                $listquery = "SELECT `id` FROM `login` WHERE userName ='$select'";
-                                $listqueryimp = mysqli_query($connection, $listquery);
-                                $row = $listqueryimp->fetch_assoc();
-                                $frdprofileid = $row["id"];
-                                // $_SESSION['floginid1'] = $floginid;
-                                ?></div>
-                    </td>
-                    <td>
-                        <form action='friends_profile.php' method='post'>
+                    <tr>
+                        <td>
+                            <div><?php echo $row["userName"]; ?>
+                            </div>
+                            <div> <?php
+                                    $_SESSION['row'] = $row;
+                                    $select = $row["userName"];
+                                    $listquery = "SELECT `id` FROM `login` WHERE userName ='$select'";
+                                    $listqueryimp = mysqli_query($connection, $listquery);
+                                    $row = $listqueryimp->fetch_assoc();
+                                    $frdprofileid = $row["id"];
+                                    // $_SESSION['floginid1'] = $floginid;
+                                    ?></div>
+                        </td>
+                        <td>
+                            <form action='friends_profile.php' method='post'>
 
-                            <input type="hidden" name='loginid' value='<?php echo $frdprofileid ?>' />
-                            <button class="btn btn-primary" type="submit">View profile</button>
-                        </form>
+                                <input type="hidden" name='loginid' value='<?php echo $frdprofileid ?>' />
+                                <button class="btn btn-primary" type="submit">View profile</button>
+                            </form>
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
             <?php
-            }
+                }
             } ?>
 
         </table>
