@@ -13,7 +13,7 @@ include("include./signup.php");
 </head>
 
 <body>
-	<div class="container" align="center">
+	<div class="container" align="center"  style="margin-top: 100px;">
 		<h1>Sign up</h1>
 		<div style="color:red">
 			<?php

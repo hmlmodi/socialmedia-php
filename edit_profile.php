@@ -1,5 +1,6 @@
 <?php
 include("include./config.php");
+include("include./navbar.php");
 include("include./edit_profile.php");
 ?>
 

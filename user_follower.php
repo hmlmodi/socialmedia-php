@@ -12,17 +12,14 @@
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
 <body>
-    <!-- <div class="container" align="center"> -->
     <div class="profilecontainer">
         <a href="./user_post.php"><button type="button" class="btn btn-dark">Your post</button></a>
         <a href="./user_follower.php"><button type="button" class="btn btn-dark">follower</button></a>
-        <!-- <a href="./edit_profile.php"><button type="button" class="btn btn-dark">setting</button></a> -->
         <a href="./edit_profile.php"><button type="button" class="btn btn-dark">Edit profile</button></a>
 
         <table class="table border">
             <th>Profile</th>
-
-
+            <th></th>
             <?php
             $floginid = $_SESSION['floginid1'];
 
@@ -35,55 +32,42 @@
                 // var_dump($num);
                 $postquery = "SELECT `userName` FROM `login` WHERE id='$fol'";
                 $result = mysqli_query($connection, $postquery);
-
-
             ?>
-
-
                 <?php while ($row = mysqli_fetch_array($result)) {
-                ?>
-                    <tr>
-                        <td>
-                            <><?php
+                ?>  
+                            <?php
                                 $select = $row["userName"];
                                 $fquery = "SELECT 'userName' FROM `login` WHERE userName ='$select'"; ?><br>
-                               
-                        </td>
-                    </tr>
             <?php
 
                 }
-            } ?>
-
+             } ?>
             <?php
-
             $floginid = $_SESSION['floginid1'];
             $valid = "SELECT `followerId` FROM `follower` WHERE userId='$floginid'";
-            $listquery = mysqli_query($connection, $valid);
-            //  var_dump($row);
-
-            while ($num = mysqli_fetch_array($listquery, MYSQLI_ASSOC)) {
-                $fol = $num["followerId"];
+            $listquery1 = mysqli_query($connection, $valid);
+            // $new1 = $listquery1->fetch_assoc();
+            // $new1 = implode("",$new);
+            // var_dump($listquery1);
+            while ($num1 = mysqli_fetch_array($listquery1,MYSQLI_ASSOC)) {
+                $fol = $num1["followerId"];
                 $postquery = "SELECT `userName` FROM `login` WHERE id='$fol'";
-                $result = mysqli_query($connection, $postquery);
+                $result1 = mysqli_query($connection, $postquery);
                 // var_dump($result);
-
-                // $result = mysqli_query($connection, $friendsquery);
-
-                while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
+                while ($row1 = mysqli_fetch_array($result1, MYSQLI_ASSOC)) {
 
             ?>
                     <tr>
                         <td>
-                            <div><?php echo $row["userName"]; ?>
+                            <div><?php echo $row1["userName"]; ?>
                             </div>
                             <div> <?php
-                                    $_SESSION['row'] = $row;
-                                    $select = $row["userName"];
-                                    $listquery = "SELECT `id` FROM `login` WHERE userName ='$select'";
-                                    $listqueryimp = mysqli_query($connection, $listquery);
-                                    $row = $listqueryimp->fetch_assoc();
-                                    $frdprofileid = $row["id"];
+                                    $_SESSION['row'] = $row1;
+                                    $select = $row1["userName"];
+                                    $listquery2 = "SELECT `id` FROM `login` WHERE userName ='$select'";
+                                    $listqueryimp = mysqli_query($connection, $listquery2);
+                                    $row1= $listqueryimp->fetch_assoc();
+                                    $frdprofileid = $row1["id"];
                                     // $_SESSION['floginid1'] = $floginid;
                                     ?></div>
                         </td>

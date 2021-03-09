@@ -14,7 +14,7 @@ include("include./login.php");
 </head>
 
 <body>
-	<div class="container" align="center">
+	<div class="container" align="center" style="margin-top: 100px;">
 		<h1>login</h1>
 		<div style="color:red">
 			<?php
